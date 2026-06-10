@@ -44,7 +44,7 @@ if not st.user.is_logged_in:
         </div>
         """, unsafe_allow_html=True)
         st.markdown("<br>", unsafe_allow_html=True)
-        st.button("🔐 Sign in with Google", on_click=st.login, use_container_width=True, type="primary")
+        st.button("🔐 Sign in with Google", on_click=st.login, kwargs={"provider": "google"}, use_container_width=True, type="primary")
         st.markdown("""
         <div style='text-align:center; font-size:12px; color:#334155; margin-top:16px;'>
           ⚠️ Not financial advice. For educational purposes only.
